@@ -1,0 +1,376 @@
+TPods-BDBOAuth1Manager
+v6
+r1
+cCheck dependencies
+cProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.o /Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000000000000000000000000000
+t2
+s0
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c0000000053273EA000000000000003B4
+t1395080864
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053273EA4000000000000019E
+t1395080868
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053273EB60000000000000ADC
+t1395080886
+s2780
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o
+t1395431255
+s38348
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.o
+t1395431255
+s71180
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.o
+t1395431255
+s36892
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.o
+t1395431255
+s13272
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.o
+t1395431255
+s6680
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.o
+t1395431255
+s3500
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager.LinkFileList
+c00000000532C9757000000000000042C
+t1395431255
+s1068
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.pch
+t1395431255
+s126728
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.pch
+t1395431255
+s126308
+
+N/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a
+t1395431255
+s171720
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+c00000000532C939D0000000000001192
+t1395430301
+s4498
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h
+c00000000532C939D00000000000048F0
+t1395430301
+s18672
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h
+c00000000532C939D00000000000038E4
+t1395430301
+s14564
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h
+c00000000532C939D0000000000001D1F
+t1395430301
+s7455
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h
+c00000000532C939D000000000000141B
+t1395430301
+s5147
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+c00000000532C939D0000000000004621
+t1395430301
+s17953
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+c00000000532C939D0000000000005009
+t1395430301
+s20489
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h
+c00000000532C939D00000000000027A4
+t1395430301
+s10148
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h
+c00000000532C939D0000000000006DC8
+t1395430301
+s28104
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.h
+c00000000532C93A00000000000000974
+t1395430304
+s2420
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m
+c00000000532C93A00000000000001791
+t1395430304
+s6033
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.h
+c00000000532C93A000000000000009A9
+t1395430304
+s2473
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m
+c00000000532C93A000000000000042E5
+t1395430304
+s17125
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.h
+c00000000532C93A00000000000000A0E
+t1395430304
+s2574
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m
+c00000000532C93A0000000000000182C
+t1395430304
+s6188
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.h
+c00000000532C93A0000000000000059C
+t1395430304
+s1436
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m
+c00000000532C93A000000000000008DA
+t1395430304
+s2266
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.h
+c00000000532C93A00000000000000526
+t1395430304
+s1318
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m
+c00000000532C93A00000000000000861
+t1395430304
+s2145
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m
+c00000000532C93A00000000000000092
+t1395430304
+s146
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-prefix.pch
+c00000000532C93A0000000000000004D
+t1395430304
+s77
+
+N/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-environment.h
+c00000000532C93A000000000000008B2
+t1395430304
+s2226
+
+CBuild AST from /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m
+r0
+
+CBuild AST from /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m
+r0
+
+CBuild AST from /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m
+r0
+
+CBuild AST from /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m
+r0
+
+CBuild AST from /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m
+r0
+
+CBuild AST from /Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies16a598d6d2dcb841^8bdf98d6d2dcb841^---0#1#1#--18"Check dependencies36"944C7BB9-E6C5-4993-B561-42531D1AB423-
+
+CCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.363763
+e417124055.430861
+r1
+xCompileC
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o
+x/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m328"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler09335dd7cedcb841^65536ed7cedcb841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m0000000000000000^4445"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.d --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.dia -c /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o36"585672CC-5079-48E2-AC7F-A96A1923051B-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.363960
+e417124055.443865
+r1
+xCompileC
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.o
+x/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Compile /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m316"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.o BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler323d5dd7cedcb841^b1a371d7cedcb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m0000000000000000^4409"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.o BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.d --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.dia -c /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.m -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestSerializer.o36"744D9464-C058-4AD5-AA58-B254D81465D9-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.364167
+e417124055.430824
+r1
+xCompileC
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.o
+x/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestSerializer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Compile /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m310"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.o BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler2f4d5dd7cedcb841^994b6ed7cedcb841^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m0000000000000000^4391"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.o BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.d --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.dia -c /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1SessionManager.m -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1SessionManager.o36"717AF214-05B6-432F-9A2B-D1D7431A0695-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.364397
+e417124055.407750
+r1
+xCompileC
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.o
+x/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.h
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Compile /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m333"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.o BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6f655dd7cedcb841^6f6268d7cedcb841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m0000000000000000^4449"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.o BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.d --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.dia -c /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSDictionary+BDBOAuth1Manager.o36"F9CDA972-57A0-48B0-8E78-834635190783-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.364739
+e417124055.400775
+r1
+xCompileC
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.o
+x/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Compile /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m325"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.o BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerdd7a5dd7cedcb841^b79966d7cedcb841^---0#0#1#-19%DVTDocumentLocation2@131"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m0000000000000000^4425"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.o BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.d --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.dia -c /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/NSString+BDBOAuth1Manager.o36"365B0F75-96C4-488E-A3F3-4B1F99C910AC-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.o /Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.365273
+e417124055.398762
+r1
+xCompileC
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.o
+x/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m284"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.o Pods-BDBOAuth1Manager-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9a995dd7cedcb841^4c1766d7cedcb841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m0000000000000000^4336"CompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.o Pods-BDBOAuth1Manager-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -include /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.d --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.dia -c /Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-dummy.m -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager-dummy.o36"BAAFB870-0670-4947-8A0E-65DC4AF675D3-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CLibtool /Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a normal i386
+s417124055.444797
+e417124055.452689
+r1
+xLibtool
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Libtool /Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a normal i386130"Libtool /Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a normal i386c3f071d7cedcb841^71e673d7cedcb841^---0#0#1#--1093"Libtool /Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a normal i386    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -filelist /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/Pods-BDBOAuth1Manager.LinkFileList -framework Foundation -o /Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/libPods-BDBOAuth1Manager.a36"56C06A6C-EDCD-47D8-B815-698CE6E026C2-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.332430
+e417124055.362780
+r1
+xProcessPCH
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.pch
+xPods-BDBOAuth1Manager-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-prefix.pch
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile Pods-BDBOAuth1Manager-prefix.pch292"ProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere52b55d7cedcb841^dfdf5cd7cedcb841^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-prefix.pch0000000000000000^4184"ProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator -fobjc-arc --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.dia -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.d -c /Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-prefix.pch -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-aufjdcnryksdoqagrhqzrilvjscv/Pods-BDBOAuth1Manager-prefix.pch.pch36"EA6F4FF8-B899-454A-AF0E-324386CC5735-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417124055.332657
+e417124055.363286
+r1
+xProcessPCH
+x/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.pch
+xPods-BDBOAuth1Manager-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-prefix.pch
+d/Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile Pods-BDBOAuth1Manager-prefix.pch292"ProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbd3855d7cedcb841^d6005dd7cedcb841^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-prefix.pch0000000000000000^4173"ProcessPCH /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/seville/Documents/github/ios/YelpSearch/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/seville/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-generated-files.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-own-target-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-all-target-headers.hmap -iquote /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Pods-BDBOAuth1Manager-project-headers.hmap -I/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator/include -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders -I/Users/seville/Documents/github/ios/YelpSearch/Pods/BuildHeaders/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/AFNetworking -I/Users/seville/Documents/github/ios/YelpSearch/Pods/Headers/BDBOAuth1Manager -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources/i386 -I/Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/DerivedSources -F/Users/seville/Documents/github/ios/YelpSearch/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.dia -MMD -MT dependencies -MF /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.d -c /Users/seville/Documents/github/ios/YelpSearch/Pods/Pods-BDBOAuth1Manager-prefix.pch -o /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-eyjlhkcprqffqdaeqffqmwqkekgi/Pods-BDBOAuth1Manager-prefix.pch.pch36"3E8EB419-9EEC-4D72-B7E9-8C2526DE5BEE-
+b7C86C95D-0418-4406-8201-0F14316A7371
+
+CProcessPCH /Users/seville/Library/Developer/Xcode/DerivedData/YelpSearch-febvloijnslvebbamnuonekujsca/Index/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-angddyxfvxmhbvfxtvemepiedjku_ast/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/seville/Library/Developer/Xcode/DerivedData/YelpSearch-febvloijnslvebbamnuonekujsca/Index/PrecompiledHeaders/Pods-BDBOAuth1Manager-prefix-fjguhdrkjexpdgadwqisodfkvhqg_ast/Pods-BDBOAuth1Manager-prefix.pch.pch Pods-BDBOAuth1Manager-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
