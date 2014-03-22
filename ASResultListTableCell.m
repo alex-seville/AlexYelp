@@ -47,4 +47,5 @@
     self.categoriesLabel.text = [business getCategoriesString];
 }
 
+
 @end

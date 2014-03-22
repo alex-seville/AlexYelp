@@ -8,6 +8,8 @@
 
 #import "ASAppDelegate.h"
 #import "ASResultsListViewController.h"
+#import "ASNavController.h"
+#import "ASFiltersViewController.h"
 
 @implementation ASAppDelegate
 
@@ -15,9 +17,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    ASResultsListViewController *vc = [[ASResultsListViewController alloc] init];
+    //ASResultsListViewController *vc = [[ASResultsListViewController alloc] init];
+    ASFiltersViewController *vc = [[ASFiltersViewController alloc] init];
     
-    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    ASNavController *nvc = [[ASNavController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nvc;
     
     // Override point for customization after application launch.
