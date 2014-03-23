@@ -18,7 +18,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
-    //_visibleView.layer.cornerRadius = 5;
+    self.layer.cornerRadius = 5;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

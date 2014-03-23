@@ -41,10 +41,6 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 @property (nonatomic, strong) NSDictionary *otherAttributes;
 
 
-@property (nonatomic, strong) ASBusiness *business;
-@property (nonatomic, strong) ASBusiness *business2;
-
-
 @end
 
 @implementation ASResultsListViewController
@@ -67,52 +63,14 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"setup table stuff");
-    
-    
-    /* fake data */
-    self.business = [[ASBusiness alloc] init];
-    self.business.name = @"Grand Pu Bah";
-    self.business.distance = 0.07;
-    self.business.price = 2;
-    self.business.reviewCount = 687;
-    self.business.address = @"88 Division Street, Mission Bay";
-    self.business.categories = @[@"Thai", @"Seafood", @"Salad"];
-    
-    
-    self.business2 = [[ASBusiness alloc] init];
-    self.business2.name = @"Basil Thai Restaurant & Bar";
-    self.business2.distance = 0.12;
-    self.business2.price = 4;
-    self.business2.reviewCount = 23;
-    self.business2.address = @"88 Division Street, Mission Bay, San Francisco, California";
-    self.business2.categories = @[@"Thai", @"Seafood", @"Salad", @"Pizza", @"Sushi", @"Italian", @"French", @"Fast Food"];
-    
-    /* fake data */
-    
-    /* when i load the data, i could precomute the sring heights */
-   
-    
-    
-    
-    
+
     self.businesses = [[NSMutableArray alloc] init];
     
-    //[self loadData];
-    [self.businesses addObject:self.business];
-    [self.businesses addObject:self.business2];
-    [self.businesses addObject:self.business];
-    [self.businesses addObject:self.business];
-    [self.businesses addObject:self.business2];
-
+    [self loadData];
     
     // Do any additional setup after loading the view from its nib.
     self.resultsList.dataSource = self;
     self.resultsList.delegate = self;
-    
-    NSLog(@"read from nib");
-    
-    
     
     /* we need this for our custom cell*/
     UINib *resultListCellNib = [UINib nibWithNibName:@"ASResultListTableCell" bundle:nil];
@@ -159,7 +117,6 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     NSInteger businessCategoriesHeight = [[currBusiness getCategoriesString] boundingRectWithSize:CGSizeMake(categoryWidth, businessLabelMaxHeight) options:NSStringDrawingUsesLineFragmentOrigin attributes:self.otherAttributes context:nil].size.height;
     
     
-    NSLog(@"%i %i %i", businessNameHeight, businessAddressHeight , businessCategoriesHeight);
     return businessNameHeight + 7 + businessAddressHeight + 3 + businessCategoriesHeight + 3 + defaultRowHeight;
 }
 

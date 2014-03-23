@@ -208,7 +208,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9eee784627deb841^d6aa794627deb841^---0#1#1#--18"Check dependencies36"A6DEA32C-6DC9-4FFA-846B-2F3D496F8150-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb076f41c67dfb841^72a7f41c67dfb841^---0#1#1#--18"Check dependencies36"153951DA-38C9-47E9-A812-B86B87BDB41F-
 
 CCompileC /Users/seville/Documents/github/ios/YelpSearch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-BDBOAuth1Manager.build/Objects-normal/i386/BDBOAuth1RequestOperationManager.o /Users/seville/Documents/github/ios/YelpSearch/Pods/BDBOAuth1Manager/BDBOAuth1Manager/BDBOAuth1RequestOperationManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s417151807.735055

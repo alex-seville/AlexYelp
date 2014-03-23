@@ -13,14 +13,10 @@
 		65CDB87018DD4F4500E7B852 /* ASNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB86E18DD4F4500E7B852 /* ASNavController.xib */; };
 		65CDB87918DE026F00E7B852 /* ASFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB87718DE026F00E7B852 /* ASFiltersViewController.m */; };
 		65CDB87A18DE026F00E7B852 /* ASFiltersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB87818DE026F00E7B852 /* ASFiltersViewController.xib */; };
-		65CDB88418DE082200E7B852 /* ASFilterMultiSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB88218DE082200E7B852 /* ASFilterMultiSelectTableViewCell.m */; };
-		65CDB88518DE082200E7B852 /* ASFilterMultiSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB88318DE082200E7B852 /* ASFilterMultiSelectTableViewCell.xib */; };
 		65CDB88918DE235200E7B852 /* ASFilterToggleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB88718DE235200E7B852 /* ASFilterToggleTableViewCell.m */; };
 		65CDB88A18DE235200E7B852 /* ASFilterToggleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB88818DE235200E7B852 /* ASFilterToggleTableViewCell.xib */; };
 		65CDB88E18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB88C18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m */; };
 		65CDB88F18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB88D18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib */; };
-		65CDB89318DE284F00E7B852 /* ASFilterSeeAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB89118DE284F00E7B852 /* ASFilterSeeAllTableViewCell.m */; };
-		65CDB89418DE284F00E7B852 /* ASFilterSeeAllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB89218DE284F00E7B852 /* ASFilterSeeAllTableViewCell.xib */; };
 		65D264F418DBE0E3009284AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D264F318DBE0E3009284AD /* Foundation.framework */; };
 		65D264F618DBE0E3009284AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D264F518DBE0E3009284AD /* CoreGraphics.framework */; };
 		65D264F818DBE0E3009284AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D264F718DBE0E3009284AD /* UIKit.framework */; };
@@ -61,18 +57,12 @@
 		65CDB87618DE026F00E7B852 /* ASFiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFiltersViewController.h; sourceTree = "<group>"; };
 		65CDB87718DE026F00E7B852 /* ASFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFiltersViewController.m; sourceTree = "<group>"; };
 		65CDB87818DE026F00E7B852 /* ASFiltersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFiltersViewController.xib; sourceTree = "<group>"; };
-		65CDB88118DE082200E7B852 /* ASFilterMultiSelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterMultiSelectTableViewCell.h; sourceTree = "<group>"; };
-		65CDB88218DE082200E7B852 /* ASFilterMultiSelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterMultiSelectTableViewCell.m; sourceTree = "<group>"; };
-		65CDB88318DE082200E7B852 /* ASFilterMultiSelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterMultiSelectTableViewCell.xib; sourceTree = "<group>"; };
 		65CDB88618DE235200E7B852 /* ASFilterToggleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterToggleTableViewCell.h; sourceTree = "<group>"; };
 		65CDB88718DE235200E7B852 /* ASFilterToggleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterToggleTableViewCell.m; sourceTree = "<group>"; };
 		65CDB88818DE235200E7B852 /* ASFilterToggleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterToggleTableViewCell.xib; sourceTree = "<group>"; };
 		65CDB88B18DE27F900E7B852 /* ASFilterExpandableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterExpandableTableViewCell.h; sourceTree = "<group>"; };
 		65CDB88C18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterExpandableTableViewCell.m; sourceTree = "<group>"; };
 		65CDB88D18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterExpandableTableViewCell.xib; sourceTree = "<group>"; };
-		65CDB89018DE284F00E7B852 /* ASFilterSeeAllTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterSeeAllTableViewCell.h; sourceTree = "<group>"; };
-		65CDB89118DE284F00E7B852 /* ASFilterSeeAllTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterSeeAllTableViewCell.m; sourceTree = "<group>"; };
-		65CDB89218DE284F00E7B852 /* ASFilterSeeAllTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterSeeAllTableViewCell.xib; sourceTree = "<group>"; };
 		65D264F018DBE0E3009284AD /* YelpSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D264F318DBE0E3009284AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D264F518DBE0E3009284AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,18 +129,12 @@
 		65CDB88018DE080100E7B852 /* filterTableCellViews */ = {
 			isa = PBXGroup;
 			children = (
-				65CDB88118DE082200E7B852 /* ASFilterMultiSelectTableViewCell.h */,
-				65CDB88218DE082200E7B852 /* ASFilterMultiSelectTableViewCell.m */,
-				65CDB88318DE082200E7B852 /* ASFilterMultiSelectTableViewCell.xib */,
 				65CDB88618DE235200E7B852 /* ASFilterToggleTableViewCell.h */,
 				65CDB88718DE235200E7B852 /* ASFilterToggleTableViewCell.m */,
 				65CDB88818DE235200E7B852 /* ASFilterToggleTableViewCell.xib */,
 				65CDB88B18DE27F900E7B852 /* ASFilterExpandableTableViewCell.h */,
 				65CDB88C18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m */,
 				65CDB88D18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib */,
-				65CDB89018DE284F00E7B852 /* ASFilterSeeAllTableViewCell.h */,
-				65CDB89118DE284F00E7B852 /* ASFilterSeeAllTableViewCell.m */,
-				65CDB89218DE284F00E7B852 /* ASFilterSeeAllTableViewCell.xib */,
 			);
 			name = filterTableCellViews;
 			sourceTree = "<group>";
@@ -351,12 +335,10 @@
 				65CDB87018DD4F4500E7B852 /* ASNavController.xib in Resources */,
 				65CDB87A18DE026F00E7B852 /* ASFiltersViewController.xib in Resources */,
 				65D2652B18DBE269009284AD /* ASResultListTableCell.xib in Resources */,
-				65CDB88518DE082200E7B852 /* ASFilterMultiSelectTableViewCell.xib in Resources */,
 				65D2650618DBE0E4009284AD /* Images.xcassets in Resources */,
 				65D2652618DBE113009284AD /* ASResultsListViewController.xib in Resources */,
 				65CDB88A18DE235200E7B852 /* ASFilterToggleTableViewCell.xib in Resources */,
 				65CDB88F18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib in Resources */,
-				65CDB89418DE284F00E7B852 /* ASFilterSeeAllTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,10 +398,8 @@
 				65D2650418DBE0E3009284AD /* ASAppDelegate.m in Sources */,
 				65D2652A18DBE269009284AD /* ASResultListTableCell.m in Sources */,
 				65D2652518DBE113009284AD /* ASResultsListViewController.m in Sources */,
-				65CDB88418DE082200E7B852 /* ASFilterMultiSelectTableViewCell.m in Sources */,
 				65D2650018DBE0E3009284AD /* main.m in Sources */,
 				65D2653118DBFE5E009284AD /* ASCategory.m in Sources */,
-				65CDB89318DE284F00E7B852 /* ASFilterSeeAllTableViewCell.m in Sources */,
 				65CDB88E18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

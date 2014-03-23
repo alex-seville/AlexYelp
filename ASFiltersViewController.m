@@ -9,11 +9,13 @@
 #import "ASFiltersViewController.h"
 
 /* filter cell types */
-#import "ASFilterMultiSelectTableViewCell.h"
+#import "ASFilterToggleTableViewCell.h"
+#import "ASFilterExpandableTableViewCell.h"
 
 @interface ASFiltersViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *filterList;
+@property (weak, nonatomic) NSMutableArray *categories;
 
 
 @end
@@ -25,6 +27,29 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        /* based on sample by Nick Halper */
+        self.categories = [NSMutableArray arrayWithObjects:
+                        @{
+                             @"name": @"Most Popular",
+                             @"type": @"ASFilterToggleTableViewCell",
+                             @"list": @[@"Open Now",@"Hot & New",@"Offering a Deal",@"Delivery"]
+                        },
+                        @{
+                             @"name": @"Distance",
+                             @"type": @"ASFilterExpandableTableViewCell",
+                             @"list": @[@"Auto",@"2 blocks",@"6 blocks",@"1 mile",@"5 miles"]
+                        },
+                        @{
+                             @"name": @"Sort By",
+                             @"type": @"ASFilterExpandableTableViewCell",
+                             @"list": @[@"Best Match",@"Distance",@"Rating",@"Most Reviewed"]
+                        },
+                        @{
+                             @"name": @"General Features",
+                             @"type": @"ASFilterExpandableTableViewCell",
+                             @"list": @[@"Take-out",@"Good for Groups",@"Has TV",@"Accepts Credit Cards",@"Wheelchair Accessible", @"Full Bar", @"Beer & Wine only", @"Happy Hour", @"Free Wi-fi", @"Paid Wi-fi"]
+                        },
+                        nil];
     }
     return self;
 }
@@ -33,21 +58,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"huh?");
-    
+   
     self.filterList.dataSource = self;
     self.filterList.delegate = self;
     
     
     
     /* we need this for our custom filter cells*/
-    /* segmented */
-    UINib *filterMultiSelectCellNib = [UINib nibWithNibName:@"ASFilterMultiSelectTableViewCell" bundle:nil];
-    [self.filterList registerNib:filterMultiSelectCellNib forCellReuseIdentifier:@"ASFilterMultiSelectTableViewCell"];
     /* toggle */
-    UINib *toggleMultiSelectCellNib = [UINib nibWithNibName:@"ASFilterToggleTableViewCell" bundle:nil];
-    [self.filterList registerNib:toggleMultiSelectCellNib forCellReuseIdentifier:@"ASFilterToggleTableViewCell"];
+    UINib *toggleCellNib = [UINib nibWithNibName:@"ASFilterToggleTableViewCell" bundle:nil];
+    [self.filterList registerNib:toggleCellNib forCellReuseIdentifier:@"ASFilterToggleTableViewCell"];
+    /* expandable */
+    UINib *expandableCellNib = [UINib nibWithNibName:@"ASFilterExpandableTableViewCell" bundle:nil];
+    [self.filterList registerNib:expandableCellNib forCellReuseIdentifier:@"ASFilterExpandableTableViewCell"];
     
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,40 +85,27 @@
 #pragma mark - uitable methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"row in section for %i", section);
+    NSLog(@"num rows in section");
     if (section == 0){
-        return 1;
-    }else if (section == 1){
-        return 4;
-    }else if (section == 2){
-        return 1;
+        return [NSArray arrayWithArray:self.categories[section][@"list"]].count;
     }
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"dequeue cell");
-    if (indexPath.section == 0){
-        return [tableView dequeueReusableCellWithIdentifier:@"ASFilterMultiSelectTableViewCell" forIndexPath:indexPath];
-    }
-    return [tableView dequeueReusableCellWithIdentifier:@"ASFilterToggleTableViewCell" forIndexPath:indexPath];
+    NSLog(@"dequeuing: %i %i %@", indexPath.section, indexPath.row, self.categories[indexPath.section][@"type"]);
+    return [tableView dequeueReusableCellWithIdentifier:self.categories[indexPath.section][@"type"] forIndexPath:indexPath];
     
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    NSLog(@"title for section: %i", section);
-    if (section == 0){
-        return @"Price";
-    }else if (section == 1){
-        return @"Most Popular";
-    }else if (section == 2){
-        return @"Distance";
-    }
-    return @"Sort by";
+    return self.categories[section][@"name"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 5;
+    return self.categories.count;
 }
+
+
 
 @end
