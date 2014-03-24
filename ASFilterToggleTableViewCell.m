@@ -21,8 +21,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
-    self.layer.masksToBounds = YES;
-    self.layer.cornerRadius = 5.0;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -39,6 +38,7 @@
 
 - (void)setFilterObj:(ASFilter *)filter {
     self.filterNameLabel.text = filter.name;
+    [self.filterState setOn:filter.state];
 }
 
 @end

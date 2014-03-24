@@ -12,7 +12,7 @@
 #import "ASYelpClient.h"
 #import <UIKit/UIKit.h>
 #import "SVProgressHUD.h"
-
+#import "ASFiltersViewController.h"
 
 
 
@@ -42,6 +42,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 @property (nonatomic, strong) NSDictionary *otherAttributes;
 
 @property (strong, nonatomic) UISearchBar *searchField;
+@property (assign, nonatomic) NSString *searchKey;
+- (IBAction)filterButtonAction:(id)sender;
 
 @end
 
@@ -57,6 +59,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         
         self.nameAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16],NSFontAttributeName, nil];
         self.otherAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:13],NSFontAttributeName, nil];
+         self.searchField.delegate = self;
         
     }
     return self;
@@ -69,6 +72,10 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     self.resultsList.hidden = true;
 
     self.businesses = [[NSMutableArray alloc] init];
+    self.searchKey = @"Thai";
+   
+    
+    
     
     [self loadData];
     
@@ -82,23 +89,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     
     
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0,320,44)];
-    
-    UIButton *filterButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 5, 10, 10)];
-    filterButton.titleLabel.text = @"Filter";
-    
-    self.searchField = [[UISearchBar alloc] initWithFrame:CGRectMake(100, 5, 10, 10)];
-    self.searchField.delegate = self;
-    
-    [headerView addSubview:self.searchField];
-    [headerView addSubview:filterButton];
-    
-    [headerView setBackgroundColor:[UIColor redColor]];
-    [headerView setTintColor:[UIColor whiteColor]];
    
-
-    
-    [self.resultsList setTableHeaderView:headerView];
     
     
     
@@ -136,7 +127,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     NSInteger categoryWidth = UIDeviceOrientationIsLandscape(self.interfaceOrientation) ? businessCategoriesVerticalWidth : businessCategoriesWidth;
     
-    NSInteger businessNameHeight = [currBusiness.name boundingRectWithSize:CGSizeMake(nameWidth, businessLabelMaxHeight) options:NSStringDrawingUsesLineFragmentOrigin attributes:self.nameAttributes context:nil].size.height;
+    NSInteger businessNameHeight = [[ASResultListTableCell renderBusinessName:currBusiness.name withIndex:indexPath.row+1]
+ boundingRectWithSize:CGSizeMake(nameWidth, businessLabelMaxHeight) options:NSStringDrawingUsesLineFragmentOrigin attributes:self.nameAttributes context:nil].size.height;
     
     
     NSInteger businessAddressHeight = [currBusiness.address boundingRectWithSize:CGSizeMake(addressWidth, businessLabelMaxHeight) options:NSStringDrawingUsesLineFragmentOrigin attributes:self.otherAttributes context:nil].size.height;
@@ -149,13 +141,37 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 
 
+#pragma mark - filter
+
+- (IBAction)filterButtonAction:(id)sender {
+    
+    ASFiltersViewController *vc = [[ASFiltersViewController alloc] initWithNibName:@"ASFiltersViewController" bundle:nil];
+    vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+
+    [self presentViewController:vc animated:YES completion: nil];
+
+    
+    
+    
+}
+
+#pragma mark - search
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
 
 #pragma mark - private
 
 - (void)loadData
 {
     [SVProgressHUD show];
-     [self.client searchWithTerm:@"Thai" success:^(AFHTTPRequestOperation *operation, id response) {
+     [self.client searchWithTerm:self.searchKey success:^(AFHTTPRequestOperation *operation, id response) {
     
          
          for(NSDictionary *business in [response objectForKey:@"businesses"]){
@@ -174,6 +190,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
      }];
     
 }
+
 
 
 

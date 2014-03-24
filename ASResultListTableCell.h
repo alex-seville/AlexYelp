@@ -13,4 +13,6 @@
 
 - (void) setBusinessToCell:(ASBusiness *)business withIndex:(NSInteger)index;
 
++ (NSString *)renderBusinessName:(NSString *)businessName withIndex:(NSInteger)index;
+
 @end

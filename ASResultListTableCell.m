@@ -53,7 +53,7 @@
 - (void) setBusinessToCell:(ASBusiness *)business withIndex:(NSInteger)index {
     _business = business;
 
-    self.businessNameLabel.text = [NSString stringWithFormat: @"%i. %@", index, business.name];
+    self.businessNameLabel.text = [ASResultListTableCell renderBusinessName:business.name withIndex:index];
     self.distanceLabel.text = [NSString stringWithFormat: @"%.2fmi", business.distance];
     self.priceLabel.text = [@"" stringByPaddingToLength:business.price withString:@"$" startingAtIndex:0];
     self.reviewCountLabel.text = [NSString stringWithFormat:@"%i Reviews", business.reviewCount];
@@ -62,6 +62,12 @@
     self.categoriesLabel.text = [business getCategoriesString];
     [self.businessImage setImageWithURL:[NSURL URLWithString:business.imageURL]];
     [self.ratingImage setImageWithURL:[NSURL URLWithString:business.ratingImageURL]];
+}
+
+#pragma mark static method to ensure naming format gets included in height calculations
+
++ (NSString *) renderBusinessName:(NSString *)businessName withIndex:(NSInteger)index {
+    return [NSString stringWithFormat: @"%i. %@", index, businessName];
 }
 
 

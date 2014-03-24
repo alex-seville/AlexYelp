@@ -20,6 +20,8 @@
 @property (nonatomic, assign) BOOL sortByExpanded;
 @property (nonatomic, assign) BOOL generalExpanded;
 
+- (IBAction)cancelButtonAction:(id)sender;
+- (IBAction)searchButtonAction:(id)sender;
 
 @end
 
@@ -83,9 +85,21 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0){
+    if (indexPath.section == 0 ||
+        (indexPath.section == 3 && self.generalExpanded) ||
+        (indexPath.section == 3 && !self.generalExpanded && indexPath.row < 3)){
         ASFilterToggleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ASFilterToggleTableViewCell" forIndexPath:indexPath];
         [cell setFilterObj:self.categories[indexPath.section][@"list"][indexPath.row]];
+        
+        [self clearRoundingEffect:cell];
+        if (1  == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+            cell.layer.masksToBounds = YES;
+            cell.layer.cornerRadius = 5.0;
+        }else if (indexPath.row == 0 || indexPath.row == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+            [self applyRoundingEffect:cell first:(indexPath.row == 0)];
+        }
+        
+        
         return cell;
 
     }
@@ -93,13 +107,38 @@
     ASFilterExpandableTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ASFilterExpandableTableViewCell" forIndexPath:indexPath];
     [cell setFilterObj:self.categories[indexPath.section][@"list"][indexPath.row]];
     
+    [self clearRoundingEffect:cell];
+    
     if ((indexPath.section == 1 && self.distanceExpanded) ||
     (indexPath.section == 2 && self.sortByExpanded) ||
     (indexPath.section == 3 && self.generalExpanded)){
         [cell setExpanded:true];
+        
+        if (1  == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+            cell.layer.masksToBounds = YES;
+            cell.layer.cornerRadius = 5.0;
+        }else if (indexPath.row == 0 ){
+            [self applyRoundingEffect:cell first:true];
+        }else if (indexPath.row == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+            [self applyRoundingEffect:cell first:false];
+        }
     }else{
         [cell setExpanded:false];
+        
+        if (indexPath.section != 3){
+            cell.layer.masksToBounds = YES;
+            cell.layer.cornerRadius = 5.0;
+        } else if (indexPath.section == 3){
+            if (indexPath.row == 0 ){
+                [self applyRoundingEffect:cell first:true];
+            }else if (indexPath.row == 3){
+                [self applyRoundingEffect:cell first:false];
+            }
+        }
     }
+    
+    
+    
     return cell;
 
 }
@@ -156,6 +195,7 @@
         }
     }
     [self.filterList deselectRowAtIndexPath:indexPath animated:YES];
+    [self.filterList reloadData];
     
 }
 
@@ -189,6 +229,7 @@
         for (NSString *filterName in category[@"list"]){
             ASFilter *newFilter = [[ASFilter alloc] init];
             newFilter.name = filterName;
+            newFilter.state = false;
             [filters addObject:newFilter];
         }
         [categories addObject: @{
@@ -201,7 +242,58 @@
 }
 
 
+-(void) applyRoundingEffect:(UITableViewCell *)cell first:(BOOL)first {
+    if (first){
+        /* from http://stackoverflow.com/questions/19910361/uitextfield-with-corner-radius-only-on-top-or-bottom */
+        UIBezierPath *maskPathWithRadiusTop = [UIBezierPath bezierPathWithRoundedRect:cell.layer.bounds
+                                                                    byRoundingCorners:(UIRectCornerTopLeft | UIRectCornerTopRight)
+                                                                          cornerRadii:CGSizeMake(5.0, 5.0)];
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = cell.layer.bounds;
+        maskLayer.path = maskPathWithRadiusTop.CGPath;
+        
+        [cell.layer setMask:maskLayer];
+    }else {
+        
+        UIBezierPath *maskPathWithRadiusBottom = [UIBezierPath bezierPathWithRoundedRect:cell.layer.bounds
+                                                                       byRoundingCorners:(UIRectCornerBottomLeft | UIRectCornerBottomRight)
+                                                                             cornerRadii:CGSizeMake(5.0, 5.0)];
+        
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = cell.layer.bounds;
+        maskLayer.path = maskPathWithRadiusBottom.CGPath;
+        
+        [cell.layer setMask:maskLayer];
+        
+    }
+
+}
+
+-(void) clearRoundingEffect:(UITableViewCell *)cell {
+    [cell.layer setMask:nil];
+    cell.layer.masksToBounds = NO;
+    cell.layer.cornerRadius = 0;
+
+    
+}
 
 
 
+
+
+
+
+
+- (IBAction)cancelButtonAction:(id)sender {
+    [self goBack];
+}
+
+- (IBAction)searchButtonAction:(id)sender {
+    [self goBack];
+}
+
+-(void) goBack {
+    
+    [self dismissViewControllerAnimated:YES completion: nil];
+}
 @end
