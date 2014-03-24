@@ -9,6 +9,7 @@
 #import "ASNavController.h"
 
 @interface ASNavController ()
+@property (weak, nonatomic) IBOutlet UINavigationBar *navBar;
 
 @end
 

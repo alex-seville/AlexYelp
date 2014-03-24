@@ -38,6 +38,10 @@
                     <constraint firstItem="dGE-PK-W9u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="yIa-CC-huz"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="filterNameLabel" destination="Vok-he-UY9" id="HCv-ha-uha"/>
+                <outlet property="filterState" destination="dGE-PK-W9u" id="3Xb-JE-B4C"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

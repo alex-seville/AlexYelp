@@ -20,7 +20,6 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Restaurant name" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="166" translatesAutoresizingMaskIntoConstraints="NO" id="Wlc-IN-JbS">
                         <rect key="frame" x="92" y="10" width="166" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.25490197539999998" green="0.53725492949999998" blue="0.082352943720000002" alpha="1" colorSpace="deviceRGB"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -59,25 +58,33 @@
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 Fake Street, SOMA" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="216" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-4J-xyd">
                         <rect key="frame" x="92" y="55" width="216" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Pizza" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="216" translatesAutoresizingMaskIntoConstraints="NO" id="K8M-PS-nh6">
                         <rect key="frame" x="92" y="74" width="216" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.71016010169999999" green="0.99825002080000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nnb-im-tJx">
+                        <rect key="frame" x="92" y="33" width="87" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="CIm-OO-moe"/>
+                            <constraint firstAttribute="width" constant="87" id="hun-DH-SqR"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="RwN-4J-xyd" firstAttribute="top" secondItem="Nnb-im-tJx" secondAttribute="bottom" constant="5" id="50A-NT-HbU"/>
                     <constraint firstAttribute="trailing" secondItem="7oU-8C-yaR" secondAttribute="trailing" constant="10" id="7r9-fq-c4V"/>
                     <constraint firstItem="K8M-PS-nh6" firstAttribute="top" secondItem="RwN-4J-xyd" secondAttribute="bottom" constant="3" id="EaQ-h5-qci"/>
                     <constraint firstItem="Wlc-IN-JbS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="92" id="LWM-uI-YAx"/>
                     <constraint firstAttribute="trailing" secondItem="RwN-4J-xyd" secondAttribute="trailing" constant="10" id="Mer-KC-wuE"/>
                     <constraint firstItem="0PI-Mp-nvx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="NcJ-Td-qcd"/>
+                    <constraint firstItem="Nnb-im-tJx" firstAttribute="top" secondItem="Wlc-IN-JbS" secondAttribute="bottom" constant="3" id="OUd-MP-qrh"/>
                     <constraint firstItem="7oU-8C-yaR" firstAttribute="top" secondItem="0PI-Mp-nvx" secondAttribute="bottom" constant="2" id="Ow7-x8-iRd"/>
                     <constraint firstItem="K8M-PS-nh6" firstAttribute="top" secondItem="RwN-4J-xyd" secondAttribute="bottom" constant="3" id="RVv-9E-J1K"/>
                     <constraint firstItem="K8M-PS-nh6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="92" id="TWh-7Z-McO"/>
@@ -89,14 +96,17 @@
                     <constraint firstItem="Wlc-IN-JbS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tie-cb-L04"/>
                     <constraint firstAttribute="trailing" secondItem="0PI-Mp-nvx" secondAttribute="trailing" constant="10" id="vpY-eb-D3a"/>
                     <constraint firstAttribute="trailing" secondItem="Wlc-IN-JbS" secondAttribute="trailing" constant="60" id="vzp-Ik-H0F"/>
+                    <constraint firstItem="Nnb-im-tJx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="92" id="wER-Wg-c07"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="businessAddressLabel" destination="RwN-4J-xyd" id="YRy-Jt-qOn"/>
+                <outlet property="businessImage" destination="iuP-55-uDL" id="6Ao-9x-wLw"/>
                 <outlet property="businessNameLabel" destination="Wlc-IN-JbS" id="aiY-gJ-tqO"/>
                 <outlet property="categoriesLabel" destination="K8M-PS-nh6" id="3u5-P7-X9c"/>
                 <outlet property="distanceLabel" destination="0PI-Mp-nvx" id="uxD-bq-J8d"/>
                 <outlet property="priceLabel" destination="7oU-8C-yaR" id="uAX-cp-y2i"/>
+                <outlet property="ratingImage" destination="Nnb-im-tJx" id="5Cy-Jb-zgo"/>
                 <outlet property="reviewCountLabel" destination="5kW-wU-Ywe" id="xUX-rY-01b"/>
             </connections>
         </tableViewCell>

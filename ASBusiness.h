@@ -16,8 +16,11 @@
 @property (nonatomic, assign) NSInteger price;
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) NSArray *categories;
+@property (nonatomic, strong) NSString *imageURL;
+@property (nonatomic, strong) NSString *ratingImageURL;
 
 - (NSString *) getCategoriesString;
+- (id)initWithBusinessData:(NSDictionary *)businessData;
 
 @end
 

@@ -11,6 +11,7 @@
 #import "ASBusiness.h"
 #import "ASYelpClient.h"
 #import <UIKit/UIKit.h>
+#import "SVProgressHUD.h"
 
 
 
@@ -23,7 +24,7 @@ static NSInteger businessAddressVerticalWidth = 468;
 static NSInteger businessCategoriesVerticalWidth = 468;
 
 static NSInteger businessLabelMaxHeight = 200;
-static NSInteger defaultRowHeight = 97 - 20 - 16 - 16;
+static NSInteger defaultRowHeight = 85 - 20 - 16 - 16;
 
 
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
@@ -40,6 +41,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 @property (nonatomic, strong) NSDictionary *nameAttributes;
 @property (nonatomic, strong) NSDictionary *otherAttributes;
 
+@property (strong, nonatomic) UISearchBar *searchField;
 
 @end
 
@@ -63,6 +65,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.resultsList.hidden = true;
 
     self.businesses = [[NSMutableArray alloc] init];
     
@@ -76,7 +80,29 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     UINib *resultListCellNib = [UINib nibWithNibName:@"ASResultListTableCell" bundle:nil];
     [self.resultsList registerNib:resultListCellNib forCellReuseIdentifier:@"ASResultListTableCell"];
     
-}
+    
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0,320,44)];
+    
+    UIButton *filterButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 5, 10, 10)];
+    filterButton.titleLabel.text = @"Filter";
+    
+    self.searchField = [[UISearchBar alloc] initWithFrame:CGRectMake(100, 5, 10, 10)];
+    self.searchField.delegate = self;
+    
+    [headerView addSubview:self.searchField];
+    [headerView addSubview:filterButton];
+    
+    [headerView setBackgroundColor:[UIColor redColor]];
+    [headerView setTintColor:[UIColor whiteColor]];
+   
+
+    
+    [self.resultsList setTableHeaderView:headerView];
+    
+    
+    
+    }
 
 
 
@@ -122,28 +148,29 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 
 
+
+
 #pragma mark - private
 
 - (void)loadData
 {
-    
+    [SVProgressHUD show];
      [self.client searchWithTerm:@"Thai" success:^(AFHTTPRequestOperation *operation, id response) {
     
          
          for(NSDictionary *business in [response objectForKey:@"businesses"]){
-             ASBusiness *parsedBusiness = [[ASBusiness alloc] init];
              
-             parsedBusiness.name = [business objectForKey:@"name"];
-             parsedBusiness.reviewCount = [[business objectForKey:@"reviewCount"] integerValue];
+             [self.businesses addObject:[[ASBusiness alloc] initWithBusinessData:business]];
              
-             
-             
-             [self.businesses addObject:parsedBusiness];
-             
-             [self.resultsList reloadData];
          }
+         [self.resultsList reloadData];
+         self.resultsList.hidden = false;
+         [SVProgressHUD dismiss];
+         
      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
      NSLog(@"error: %@", [error description]);
+         self.resultsList.hidden = false;
+         [SVProgressHUD dismiss];
      }];
     
 }

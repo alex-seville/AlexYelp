@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASFilter.h"
 
 @interface ASFilterExpandableTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) ASFilter *filterObj;
+@property (nonatomic, assign) BOOL expanded;
 
 @end

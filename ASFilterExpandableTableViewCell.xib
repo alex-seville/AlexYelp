@@ -37,6 +37,10 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="filterNameLabel" destination="rIW-Lr-NxA" id="qj0-cP-pO2"/>
+                <outlet property="filterState" destination="JBs-nV-T8X" id="23M-7Z-kT5"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

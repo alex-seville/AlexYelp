@@ -17,10 +17,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    //ASResultsListViewController *vc = [[ASResultsListViewController alloc] init];
-    ASFiltersViewController *vc = [[ASFiltersViewController alloc] init];
+    ASResultsListViewController *vc = [[ASResultsListViewController alloc] init];
+    //ASFiltersViewController *vc = [[ASFiltersViewController alloc] init];
     
     ASNavController *nvc = [[ASNavController alloc] initWithRootViewController:vc];
+    [nvc.navigationBar setBarTintColor:[UIColor redColor]];
+    /* for later */
+    [nvc.navigationBar setHidden:YES];
     self.window.rootViewController = nvc;
     
     // Override point for customization after application launch.

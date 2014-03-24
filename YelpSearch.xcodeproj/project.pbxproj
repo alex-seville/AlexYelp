@@ -17,6 +17,7 @@
 		65CDB88A18DE235200E7B852 /* ASFilterToggleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB88818DE235200E7B852 /* ASFilterToggleTableViewCell.xib */; };
 		65CDB88E18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB88C18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m */; };
 		65CDB88F18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB88D18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib */; };
+		65CDB89718DF8AEC00E7B852 /* ASFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB89618DF8AEC00E7B852 /* ASFilter.m */; };
 		65D264F418DBE0E3009284AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D264F318DBE0E3009284AD /* Foundation.framework */; };
 		65D264F618DBE0E3009284AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D264F518DBE0E3009284AD /* CoreGraphics.framework */; };
 		65D264F818DBE0E3009284AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D264F718DBE0E3009284AD /* UIKit.framework */; };
@@ -63,6 +64,8 @@
 		65CDB88B18DE27F900E7B852 /* ASFilterExpandableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterExpandableTableViewCell.h; sourceTree = "<group>"; };
 		65CDB88C18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterExpandableTableViewCell.m; sourceTree = "<group>"; };
 		65CDB88D18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterExpandableTableViewCell.xib; sourceTree = "<group>"; };
+		65CDB89518DF8AEC00E7B852 /* ASFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilter.h; sourceTree = "<group>"; };
+		65CDB89618DF8AEC00E7B852 /* ASFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilter.m; sourceTree = "<group>"; };
 		65D264F018DBE0E3009284AD /* YelpSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D264F318DBE0E3009284AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D264F518DBE0E3009284AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -225,6 +228,8 @@
 				65D2652C18DBFC75009284AD /* ASBusiness.h */,
 				65D2652D18DBFC75009284AD /* ASBusiness.m */,
 				65D2652F18DBFE5E009284AD /* ASCategory.h */,
+				65CDB89518DF8AEC00E7B852 /* ASFilter.h */,
+				65CDB89618DF8AEC00E7B852 /* ASFilter.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 				65CDB87918DE026F00E7B852 /* ASFiltersViewController.m in Sources */,
 				65707EDC18DCCB83008B6F7C /* ASYelpClient.m in Sources */,
 				65CDB86F18DD4F4500E7B852 /* ASNavController.m in Sources */,
+				65CDB89718DF8AEC00E7B852 /* ASFilter.m in Sources */,
 				65CDB88918DE235200E7B852 /* ASFilterToggleTableViewCell.m in Sources */,
 				65D2652E18DBFC75009284AD /* ASBusiness.m in Sources */,
 				65D2650418DBE0E3009284AD /* ASAppDelegate.m in Sources */,
@@ -521,6 +527,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YelpSearch/YelpSearch-Prefix.pch";
 				INFOPLIST_FILE = "YelpSearch/YelpSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -535,6 +542,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YelpSearch/YelpSearch-Prefix.pch";
 				INFOPLIST_FILE = "YelpSearch/YelpSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

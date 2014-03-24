@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASResultsListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ASResultsListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @end

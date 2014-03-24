@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASFilter.h"
 
 @interface ASFilterToggleTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) ASFilter *filterObj;
 
 @end
