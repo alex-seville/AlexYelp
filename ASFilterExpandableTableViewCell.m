@@ -11,7 +11,7 @@
 
 @interface ASFilterExpandableTableViewCell()
 
-@property (weak, nonatomic) IBOutlet UILabel *filterNameLabel;
+
 @property (weak, nonatomic) IBOutlet UIButton *filterState;
 @end
 
@@ -32,11 +32,13 @@
 
 
 - (void)setFilterObj:(ASFilter *)filter {
+    _filterObj = filter;
     self.filterNameLabel.text = filter.name;
 }
 
 - (void)setExpanded:(BOOL)expanded {
-    self.filterState.titleLabel.text = expanded ? @"•" : @">";
-}
+
+    self.filterState.titleLabel.text = expanded ?  _filterObj.state ? @"YES" : @"NO" : @"MORE" ;
+   }
 
 @end

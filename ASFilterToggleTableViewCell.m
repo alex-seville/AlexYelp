@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *filterNameLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *filterState;
+- (IBAction)filterStateAction:(id)sender;
 
 @end
 
@@ -27,8 +28,15 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
+    
+    
     // Configure the view for the selected state
+}
+
+- (IBAction)filterStateAction:(id)sender {
+    
+    self.filterObj.state = self.filterState.on;
+    
 }
 
 
@@ -37,8 +45,11 @@
 
 
 - (void)setFilterObj:(ASFilter *)filter {
+    _filterObj = filter;
     self.filterNameLabel.text = filter.name;
     [self.filterState setOn:filter.state];
+    
 }
+
 
 @end

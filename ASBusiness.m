@@ -27,9 +27,11 @@
     /* parse location */
     NSDictionary *location = [businessData objectForKey:@"location"];
     self.address = [[location objectForKey:@"address"] componentsJoinedByString:@", "];
-    self.address = [self.address stringByAppendingString:@", "];
-    self.address = [self.address stringByAppendingString:[[location objectForKey:@"neighborhoods"] componentsJoinedByString:@", "]];
-        
+    if ([location objectForKey:@"neighborhoods"] ){
+        self.address = [self.address stringByAppendingString:@", "];
+        self.address = [self.address stringByAppendingString:[[location objectForKey:@"neighborhoods"] componentsJoinedByString:@", "]];
+    }
+    
     self.categories = [businessData objectForKey:@"categories"];
         
         

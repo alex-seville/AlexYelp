@@ -22,16 +22,23 @@
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBs-nV-T8X">
-                        <rect key="frame" x="266" y="7" width="46" height="30"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBs-nV-T8X">
+                        <rect key="frame" x="230" y="11" width="70" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title=">">
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="F6N-lk-lXU"/>
+                            <constraint firstAttribute="width" constant="70" id="JkH-e9-WXg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="MORE">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JBs-nV-T8X" secondAttribute="trailing" constant="20" id="3cs-CM-T1O"/>
+                    <constraint firstItem="JBs-nV-T8X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="DxK-GZ-6fa"/>
                     <constraint firstItem="rIW-Lr-NxA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lb9-BH-Ien"/>
                     <constraint firstItem="rIW-Lr-NxA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="tWy-N4-hfZ"/>
                 </constraints>

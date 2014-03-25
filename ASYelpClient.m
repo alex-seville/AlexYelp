@@ -11,6 +11,8 @@
 #import "ASYelpClient.h"
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "ASFilter.h"
+#import "ASFilterSection.h"
 
 @implementation ASYelpClient
 
@@ -24,12 +26,96 @@
     return self;
 }
 
-- (AFHTTPRequestOperation *)searchWithTerm:(NSString *)term success:(void (^)(AFHTTPRequestOperation *operation, id response))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+- (AFHTTPRequestOperation *)searchWithTerm:(NSString *)term filters:(NSArray *)filters success:(void (^)(AFHTTPRequestOperation *operation, id response))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
     
     // For additional parameters, see http://www.yelp.com/developers/documentation/v2/search_api
-    NSDictionary *parameters = @{@"term": term, @"location" : @"San Francisco"};
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+    [parameters addEntriesFromDictionary:@{@"term": term, @"location" : @"San Francisco"}];
+    
+    /* loop through the filters and apply any on values as search filters */
+    for(ASFilterSection *filterSection in filters){
+        for(ASFilter *filter in filterSection.filterList){
+            if (filter.state && ![filter.apiValue isEqual:@""]){
+                if (parameters[filterSection.apiField]){
+                    [parameters[filterSection.apiField] stringByAppendingString:[@"," stringByAppendingString:filter.apiValue]];
+                }else{
+                    [parameters addEntriesFromDictionary:@{filterSection.apiField: filter.apiValue}];
+                }
+            }
+        }
+    }
+    NSLog(@"parameters: %@", parameters);
     
     return [self GET:@"search" parameters:parameters success:success failure:failure];
+}
+
+/* should be in the model, but no time to refactor now */
+- (NSArray *)getFilterSections {
+    NSMutableArray *filterSections = [[NSMutableArray alloc] init];
+    
+    /* based on sample by Nick Halper */
+    NSMutableArray *categoryConfig = [NSMutableArray arrayWithObjects:
+                                      @{
+                                        @"name": @"Features",
+                                        @"apiField": @"deals_filter",
+                                        @"list": @[
+                                                @[@"Offering a Deal", @(YES), @(NO)]
+                                            ]
+                                        },
+                                      @{
+                                        @"name": @"Distance",
+                                        @"apiField": @"radius_filter",
+                                        @"list": @[
+                                                @[@"Auto", @"", @(YES)],
+                                                @[@"2 blocks", @(160), @(NO)],
+                                                @[@"6 blocks", @(482), @(NO)],
+                                                @[@"1 mile", @(1609), @(NO)],
+                                                @[@"5 miles", @(8046), @(NO)]
+                                            ]
+                                        },
+                                      @{
+                                        @"name": @"Sort By",
+                                        @"apiField": @"sort",
+                                        @"list": @[
+                                                @[@"Best Match", @(0), @(YES)],
+                                                @[@"Distance",  @(1), @(NO)],
+                                                @[@"Rating",  @(2), @(NO)]
+                                            ]
+                                        },
+                                      @{
+                                        @"name": @"Categories",
+                                        @"apiField": @"category_filter",
+                                        @"list": @[
+                                                @[@"Buffets", @"buffets", @(NO)],
+                                                @[@"Cafes", @"cafes", @(NO)],
+                                                @[@"Burgers", @"burgers", @(NO)],
+                                                @[@"Show All", @"", @(NO)],
+                                                @[@"Delis", @"delis", @(NO)],
+                                                @[@"Diners", @"diners", @(NO)],
+                                                @[@"Halal", @"halal", @(NO)],
+                                                @[@"Salad", @"salad", @(NO)],
+                                                @[@"Soup", @"soup", @(NO)],
+                                                @[@"Vegan", @"vegan", @(NO)]
+                                            ]
+                                        },
+                                      nil];
+    
+    for (NSDictionary *category in categoryConfig){
+        ASFilterSection *filterSection = [[ASFilterSection alloc] init];
+        NSMutableArray *filters = [[NSMutableArray alloc] init];
+        for (NSArray *filterDetail in category[@"list"]){
+            ASFilter *newFilter = [[ASFilter alloc] init];
+            newFilter.name = filterDetail[0];
+            newFilter.apiValue = filterDetail[1];
+            newFilter.state = [filterDetail[2] boolValue];
+            [filters addObject:newFilter];
+        }
+        filterSection.name = category[@"name"];
+        filterSection.apiField = category[@"apiField"];
+        filterSection.filterList = filters;
+        [filterSections addObject: filterSection];
+    }
+    return filterSections;
 }
 
 @end

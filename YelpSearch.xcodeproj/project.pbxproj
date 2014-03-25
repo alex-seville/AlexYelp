@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D8008FCC3ED41ECA400C151 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AF768AA404B0FAE42912A /* libPods.a */; };
+		6504AB9F18E155D900F0528A /* ASFilterSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6504AB9E18E155D900F0528A /* ASFilterSection.m */; };
+		6504ABA118E16C7B00F0528A /* dropdown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6504ABA018E16C7B00F0528A /* dropdown.jpg */; };
+		6504ABA318E16E0300F0528A /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 6504ABA218E16E0300F0528A /* check.png */; };
 		65707EDC18DCCB83008B6F7C /* ASYelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 65707EDB18DCCB83008B6F7C /* ASYelpClient.m */; };
 		65CDB86F18DD4F4500E7B852 /* ASNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CDB86D18DD4F4500E7B852 /* ASNavController.m */; };
 		65CDB87018DD4F4500E7B852 /* ASNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CDB86E18DD4F4500E7B852 /* ASNavController.xib */; };
@@ -50,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		233AF768AA404B0FAE42912A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6504AB9D18E155D900F0528A /* ASFilterSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterSection.h; sourceTree = "<group>"; };
+		6504AB9E18E155D900F0528A /* ASFilterSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterSection.m; sourceTree = "<group>"; };
+		6504ABA018E16C7B00F0528A /* dropdown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dropdown.jpg; sourceTree = "<group>"; };
+		6504ABA218E16E0300F0528A /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		65707EDA18DCCB83008B6F7C /* ASYelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASYelpClient.h; sourceTree = "<group>"; };
 		65707EDB18DCCB83008B6F7C /* ASYelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASYelpClient.m; sourceTree = "<group>"; };
 		65CDB86C18DD4F4500E7B852 /* ASNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavController.h; sourceTree = "<group>"; };
@@ -145,6 +152,8 @@
 		65D264E718DBE0E3009284AD = {
 			isa = PBXGroup;
 			children = (
+				6504ABA218E16E0300F0528A /* check.png */,
+				6504ABA018E16C7B00F0528A /* dropdown.jpg */,
 				65CDB86C18DD4F4500E7B852 /* ASNavController.h */,
 				65CDB86D18DD4F4500E7B852 /* ASNavController.m */,
 				65CDB86E18DD4F4500E7B852 /* ASNavController.xib */,
@@ -230,6 +239,8 @@
 				65D2652F18DBFE5E009284AD /* ASCategory.h */,
 				65CDB89518DF8AEC00E7B852 /* ASFilter.h */,
 				65CDB89618DF8AEC00E7B852 /* ASFilter.m */,
+				6504AB9D18E155D900F0528A /* ASFilterSection.h */,
+				6504AB9E18E155D900F0528A /* ASFilterSection.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -338,10 +349,12 @@
 			files = (
 				65D264FE18DBE0E3009284AD /* InfoPlist.strings in Resources */,
 				65CDB87018DD4F4500E7B852 /* ASNavController.xib in Resources */,
+				6504ABA318E16E0300F0528A /* check.png in Resources */,
 				65CDB87A18DE026F00E7B852 /* ASFiltersViewController.xib in Resources */,
 				65D2652B18DBE269009284AD /* ASResultListTableCell.xib in Resources */,
 				65D2650618DBE0E4009284AD /* Images.xcassets in Resources */,
 				65D2652618DBE113009284AD /* ASResultsListViewController.xib in Resources */,
+				6504ABA118E16C7B00F0528A /* dropdown.jpg in Resources */,
 				65CDB88A18DE235200E7B852 /* ASFilterToggleTableViewCell.xib in Resources */,
 				65CDB88F18DE27F900E7B852 /* ASFilterExpandableTableViewCell.xib in Resources */,
 			);
@@ -407,6 +420,7 @@
 				65D2650018DBE0E3009284AD /* main.m in Sources */,
 				65D2653118DBFE5E009284AD /* ASCategory.m in Sources */,
 				65CDB88E18DE27F900E7B852 /* ASFilterExpandableTableViewCell.m in Sources */,
+				6504AB9F18E155D900F0528A /* ASFilterSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

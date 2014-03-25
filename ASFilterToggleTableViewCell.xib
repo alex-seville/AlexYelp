@@ -29,6 +29,9 @@
                             <constraint firstAttribute="width" constant="49" id="LeK-W0-ftz"/>
                             <constraint firstAttribute="height" constant="31" id="SnL-zk-EoZ"/>
                         </constraints>
+                        <connections>
+                            <action selector="filterStateAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="1Cl-9J-oSN"/>
+                        </connections>
                     </switch>
                 </subviews>
                 <constraints>

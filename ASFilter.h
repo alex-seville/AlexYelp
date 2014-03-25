@@ -11,6 +11,7 @@
 @interface ASFilter : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *apiValue;
 @property (nonatomic, assign) BOOL state;
 
 

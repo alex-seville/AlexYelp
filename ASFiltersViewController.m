@@ -7,6 +7,8 @@
 //
 
 #import "ASFiltersViewController.h"
+#import "ASFilterSection.h"
+#import "ASFilter.h"
 
 /* filter cell types */
 #import "ASFilterToggleTableViewCell.h"
@@ -15,10 +17,12 @@
 @interface ASFiltersViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *filterList;
-@property (strong, nonatomic) NSMutableArray *categories;
+
 @property (nonatomic, assign) BOOL distanceExpanded;
 @property (nonatomic, assign) BOOL sortByExpanded;
 @property (nonatomic, assign) BOOL generalExpanded;
+
+
 
 - (IBAction)cancelButtonAction:(id)sender;
 - (IBAction)searchButtonAction:(id)sender;
@@ -33,7 +37,6 @@
     if (self) {
         // Custom initialization
         
-        self.categories = [self makeCategoryList];
         self.distanceExpanded = false;
         self.sortByExpanded = false;
         self.generalExpanded = false;
@@ -50,7 +53,6 @@
     self.filterList.delegate = self;
     
     
-    
     /* we need this for our custom filter cells*/
     /* toggle */
     UINib *toggleCellNib = [UINib nibWithNibName:@"ASFilterToggleTableViewCell" bundle:nil];
@@ -59,7 +61,7 @@
     UINib *expandableCellNib = [UINib nibWithNibName:@"ASFilterExpandableTableViewCell" bundle:nil];
     [self.filterList registerNib:expandableCellNib forCellReuseIdentifier:@"ASFilterExpandableTableViewCell"];
     
-
+    [self.filterList reloadData];
 
 }
 
@@ -72,12 +74,13 @@
 #pragma mark - uitable methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    ASFilterSection *filterSection = self.filterSectionsList[section];
     
     if (section == 0 ||
         (section == 1 && self.distanceExpanded) ||
         (section == 2 && self.sortByExpanded) ||
         (section == 3 && self.generalExpanded)){
-        return [NSArray arrayWithArray:self.categories[section][@"list"]].count;
+        return [NSArray arrayWithArray:filterSection.filterList].count;
     }else if (section == 3){
         return 4;
     }
@@ -85,17 +88,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ASFilterSection *filterSection = self.filterSectionsList[indexPath.section];
+    
     if (indexPath.section == 0 ||
         (indexPath.section == 3 && self.generalExpanded) ||
         (indexPath.section == 3 && !self.generalExpanded && indexPath.row < 3)){
         ASFilterToggleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ASFilterToggleTableViewCell" forIndexPath:indexPath];
-        [cell setFilterObj:self.categories[indexPath.section][@"list"][indexPath.row]];
+        [cell setFilterObj:filterSection.filterList[indexPath.row]];
         
         [self clearRoundingEffect:cell];
-        if (1  == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+        if (1  == [NSArray arrayWithArray: filterSection.filterList].count){
             cell.layer.masksToBounds = YES;
             cell.layer.cornerRadius = 5.0;
-        }else if (indexPath.row == 0 || indexPath.row == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+        }else if (indexPath.row == 0 || indexPath.row == [NSArray arrayWithArray: filterSection.filterList].count-1){
             [self applyRoundingEffect:cell first:(indexPath.row == 0)];
         }
         
@@ -105,7 +110,7 @@
     }
     
     ASFilterExpandableTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ASFilterExpandableTableViewCell" forIndexPath:indexPath];
-    [cell setFilterObj:self.categories[indexPath.section][@"list"][indexPath.row]];
+    [cell setFilterObj:filterSection.filterList[indexPath.row]];
     
     [self clearRoundingEffect:cell];
     
@@ -114,17 +119,25 @@
     (indexPath.section == 3 && self.generalExpanded)){
         [cell setExpanded:true];
         
-        if (1  == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+        if (1  == [NSArray arrayWithArray: filterSection.filterList].count-1){
             cell.layer.masksToBounds = YES;
             cell.layer.cornerRadius = 5.0;
         }else if (indexPath.row == 0 ){
             [self applyRoundingEffect:cell first:true];
-        }else if (indexPath.row == [NSArray arrayWithArray: self.categories[indexPath.section][@"list"]].count-1){
+        }else if (indexPath.row == [NSArray arrayWithArray: filterSection.filterList].count-1){
             [self applyRoundingEffect:cell first:false];
         }
+        
     }else{
         [cell setExpanded:false];
-        
+        NSString *properLabel = @"";
+        for(ASFilter *filter in filterSection.filterList){
+            if (filter.state){
+                properLabel = filter.name;
+                
+            }
+        }
+        cell.filterNameLabel.text = properLabel;
         if (indexPath.section != 3){
             cell.layer.masksToBounds = YES;
             cell.layer.cornerRadius = 5.0;
@@ -144,18 +157,19 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    
-    return self.categories[section][@"name"];
+    ASFilterSection *filterSection = self.filterSectionsList[section];
+    return filterSection.name;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.categories.count;
+    return self.filterSectionsList.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ASFilterSection *filterSection = _filterSectionsList[indexPath.section];
     
     if (indexPath.section > 0){
-        NSInteger currentCount = [NSArray arrayWithArray:self.categories[indexPath.section][@"list"]].count;
+        NSInteger currentCount = [NSArray arrayWithArray:filterSection.filterList].count;
         bool expand = false;
         NSInteger currentRowCount = 1;
         
@@ -174,6 +188,8 @@
         
         if (expand){
             
+            
+            
             NSMutableArray *indexPaths = [NSMutableArray array];
             
             for (int i = 0; i < currentCount-currentRowCount; i++) {
@@ -181,6 +197,7 @@
             }
             
             [self.filterList insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationTop];
+            
         }else{
             
 
@@ -190,56 +207,32 @@
             for (int i = 0; i < currentCount-1; i++) {
                 [indexPaths addObject:[NSIndexPath indexPathForRow:1+i inSection:indexPath.section]];
             }
+            ASFilter *tmp=[filterSection.filterList objectAtIndex:indexPath.row];
+            for(ASFilter *disableFilter in filterSection.filterList){
+                
+                disableFilter.state = false;
+                
+            }
             
             [self.filterList deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationTop];
+            
         }
+        
+        
     }
+    ASFilter *currFilter = filterSection.filterList[indexPath.row];
+       currFilter.state = true;
+    
+    
     [self.filterList deselectRowAtIndexPath:indexPath animated:YES];
-    [self.filterList reloadData];
+    
     
 }
 
 
 #pragma mark private
 
-- (NSMutableArray *)makeCategoryList {
-    NSMutableArray *categories = [[NSMutableArray alloc] init];
-    /* based on sample by Nick Halper */
-    NSMutableArray *categoryConfig = [NSMutableArray arrayWithObjects:
-     @{
-       @"name": @"Most Popular",
-       @"list": @[@"Open Now",@"Hot & New",@"Offering a Deal",@"Delivery"]
-       },
-     @{
-       @"name": @"Distance",
-       @"list": @[@"Auto",@"2 blocks",@"6 blocks",@"1 mile",@"5 miles"]
-       },
-     @{
-       @"name": @"Sort By",
-       @"list": @[@"Best Match",@"Distance",@"Rating",@"Most Reviewed"]
-       },
-     @{
-       @"name": @"General Features",
-       @"list": @[@"Take-out",@"Good for Groups",@"Has TV",@"Show All",@"Accepts Credit Cards",@"Wheelchair Accessible", @"Full Bar", @"Beer & Wine only", @"Happy Hour", @"Free Wi-fi", @"Paid Wi-fi"]
-       },
-     nil];
-    
-    for (NSDictionary *category in categoryConfig){
-        NSMutableArray *filters = [[NSMutableArray alloc] init];
-        for (NSString *filterName in category[@"list"]){
-            ASFilter *newFilter = [[ASFilter alloc] init];
-            newFilter.name = filterName;
-            newFilter.state = false;
-            [filters addObject:newFilter];
-        }
-        [categories addObject: @{
-                        @"name": category[@"name"],
-                        @"list": filters
-                        }];
-    }
-    return categories;
-    
-}
+
 
 
 -(void) applyRoundingEffect:(UITableViewCell *)cell first:(BOOL)first {
@@ -279,20 +272,19 @@
 
 
 
-
-
-
-
-
 - (IBAction)cancelButtonAction:(id)sender {
+   
     [self goBack];
 }
 
 - (IBAction)searchButtonAction:(id)sender {
+    
     [self goBack];
 }
 
 -(void) goBack {
+    
+    [self.delegate addItemViewController:self didChangeFilters:self.filterSectionsList];
     
     [self dismissViewControllerAnimated:YES completion: nil];
 }

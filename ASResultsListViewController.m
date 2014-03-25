@@ -13,6 +13,8 @@
 #import <UIKit/UIKit.h>
 #import "SVProgressHUD.h"
 #import "ASFiltersViewController.h"
+#import "ASFilterSection.h"
+#import "ASFilter.h"
 
 
 
@@ -41,9 +43,13 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 @property (nonatomic, strong) NSDictionary *nameAttributes;
 @property (nonatomic, strong) NSDictionary *otherAttributes;
 
-@property (strong, nonatomic) UISearchBar *searchField;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (assign, nonatomic) NSString *searchKey;
 - (IBAction)filterButtonAction:(id)sender;
+
+
+@property (strong, nonatomic) NSArray *filterSections;
 
 @end
 
@@ -59,7 +65,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         
         self.nameAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16],NSFontAttributeName, nil];
         self.otherAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:13],NSFontAttributeName, nil];
-         self.searchField.delegate = self;
+        self.filterSections = [self.client getFilterSections];
         
     }
     return self;
@@ -74,7 +80,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     self.businesses = [[NSMutableArray alloc] init];
     self.searchKey = @"Thai";
    
-    
+    self.searchBar.delegate = self;
     
     
     [self loadData];
@@ -147,23 +153,32 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     ASFiltersViewController *vc = [[ASFiltersViewController alloc] initWithNibName:@"ASFiltersViewController" bundle:nil];
     vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    
+   
+    vc.filterSectionsList = self.filterSections;
+    vc.delegate = self;
 
     [self presentViewController:vc animated:YES completion: nil];
-
-    
     
     
 }
 
 #pragma mark - search
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
-    [searchBar resignFirstResponder];
-}
+
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+   
     [searchBar resignFirstResponder];
+    
+    self.searchKey = searchBar.text;
+    [self loadData];
+}
+
+#pragma ASFiltersViewController
+
+- (void)addItemViewController:(ASFiltersViewController *)controller didChangeFilters:(NSArray *)filterSectionList {
+    //self.filterSections = filterSectionList;
+    [self loadData];
 }
 
 #pragma mark - private
@@ -171,8 +186,9 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 - (void)loadData
 {
     [SVProgressHUD show];
-     [self.client searchWithTerm:self.searchKey success:^(AFHTTPRequestOperation *operation, id response) {
+     [self.client searchWithTerm:self.searchKey filters:self.filterSections success:^(AFHTTPRequestOperation *operation, id response) {
     
+         [self.businesses removeAllObjects];
          
          for(NSDictionary *business in [response objectForKey:@"businesses"]){
              
@@ -190,6 +206,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
      }];
     
 }
+
+
 
 
 

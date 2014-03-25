@@ -14,4 +14,6 @@
 @property (nonatomic, strong) ASFilter *filterObj;
 @property (nonatomic, assign) BOOL expanded;
 
+@property (weak, nonatomic) IBOutlet UILabel *filterNameLabel;
+
 @end
