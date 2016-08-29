@@ -29,10 +29,10 @@ static NSInteger businessLabelMaxHeight = 200;
 static NSInteger defaultRowHeight = 85 - 20 - 16 - 16;
 
 
-NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
-NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
-NSString * const kYelpToken = @"uRcRswHFYa1VkDrGV6LAW2F8clGh5JHV";
-NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
+NSString * const kYelpConsumerKey = @"xxxxxxx";
+NSString * const kYelpConsumerSecret = @"xxxxxxx";
+NSString * const kYelpToken = @"xxxxxxx";
+NSString * const kYelpTokenSecret = @"xxxxxxxY";
 
 @interface ASResultsListViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *resultsList;
